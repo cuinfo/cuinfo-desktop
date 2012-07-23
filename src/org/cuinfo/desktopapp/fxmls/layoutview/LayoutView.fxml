@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="me" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml" fx:controller="org.cuinfo.desktopapp.fxmls.layoutview.LayoutViewController">
+  <children>
+    <ImageView fx:id="backgroundImage" fitHeight="450.0" fitWidth="800.0" mouseTransparent="true" opacity="0.78">
+      <image>
+        <Image url="@images/earth.jpg" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <AnchorPane fx:id="pageContainer" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" snapToPixel="false" style="&#10;" styleClass="pageContainer">
+      <stylesheets>
+        <URL value="@layoutview.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+</StackPane>

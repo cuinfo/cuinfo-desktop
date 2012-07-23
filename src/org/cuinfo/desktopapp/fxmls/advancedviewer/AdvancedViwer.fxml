@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="me" prefHeight="450.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="org.cuinfo.desktopapp.fxmls.advancedviewer.AdvancedViwerController">
+  <children>
+    <StackPane fx:id="mediaGroup" prefHeight="450.0" prefWidth="800.0" />
+    <ImageView fx:id="close" fitHeight="48.0" fitWidth="48.0" layoutX="738.0" layoutY="14.0" onMouseClicked="#close" onMouseEntered="#close" onMouseExited="#close" onMouseMoved="#close" onMousePressed="#close" onMouseReleased="#close" preserveRatio="true">
+      <image>
+        <Image url="@images/close.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@advancedviwer.css" />
+  </stylesheets>
+</AnchorPane>
