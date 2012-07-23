@@ -1,0 +1,64 @@
+/* 
+    Document   : mainPageTop
+    Created on : 2012-7-19, 14:01:25
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/**pane 背景 main.js中**/
+.mangPageTop{
+    padding: 0px;
+    background-image: url("bg_main_top.gif");
+}
+
+.top-page-context{
+    width:100%;
+    height: 100%;
+}
+/****标题***/
+.top-page-context #top-page-title{
+   
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    font-size: 32px;
+    color: white;
+    display: inline-block;
+    
+}
+/****信息层1***/
+.top-page-context .layer1{
+   position: absolute;
+   bottom: 12px;
+   right:  50px;
+   
+   text-align: right;
+   
+}
+/****时间***/
+#top-page-date{
+    margin-bottom: 5px;
+}
+/****用户信息***/
+#top-page-user-info{
+    display:inline;
+}
+/****问好***/
+#top-page-user-welcome{
+    display:inline;
+}
+/****退出登陆***/
+#top-page-user-login-out{
+    display:inline;
+}
+#top-page-user-login-out a{
+   color:#3399bb;
+}
+#top-page-user-login-out a:hover{
+   color:white;
+   
+   text-decoration: underline;
+   text-shadow: none;
+   font-size: 12px;
+   cursor: pointer;
+}

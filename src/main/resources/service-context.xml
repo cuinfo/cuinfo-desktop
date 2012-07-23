@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+">
+    <!-- ==================业务逻辑层的父Bean，负责注入DAO接口实例================ -->
+    <bean id="serviceParent" abstract="true">
+        <property name="userDAO" ref="userDAO"/>
+    </bean>
+    <!-- ==================基本信息业务逻辑层================ -->
+    <bean id="baseInformationService" class="org.cuinfo.service.impl.BaseInformationServiceImpl" parent="serviceParent"/>
+    <!-- ==================使用系统业务逻辑层================ -->
+    <bean id="useSystemService" class="org.cuinfo.service.impl.UseSystemServiceimpl" parent="serviceParent"/>
+</beans>

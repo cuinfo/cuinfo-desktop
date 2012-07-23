@@ -1,0 +1,18 @@
+.icon-user-add {    
+        background: url(drop-add.gif) left top no-repeat !important;    
+}
+.icon-user-update {    
+        background: url(edit.gif) left top no-repeat !important;    
+}
+.icon-user-delete {    
+        background: url(delete.gif) left top no-repeat !important;    
+}
+.icon-user-cx{    
+        background: url(findc.gif) left top no-repeat !important;    
+}
+.icon-user-right{    
+        background: url(right-btn.gif) left top no-repeat !important;    
+}
+.icon-user-left{    
+        background: url(left-btn.gif) left top no-repeat !important;    
+}

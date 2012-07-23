@@ -1,0 +1,78 @@
+/* 
+    Document   : user-manager
+    Created on : 2012-7-20, 10:32:52
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@CHARSET "UTF-8";
+
+
+
+
+select{
+    font-size:11px;
+}
+
+.image-tip span{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.user-manager .thumb{
+	background: #dddddd;
+	padding:4px 3px 3px 3px;
+}
+
+.user-manager .thumb-img{
+	background: #fff;
+	border:1px solid white;
+	 width:64px;
+    height:64px;
+}
+.user-manager .thumb-img:hover{
+	background: #dddddd;
+	border:1px solid white;
+	 width:64px;
+    height:64px;
+}
+
+.user-manager .thumb-wrap{
+    float: left;
+    margin: 4px;
+    margin-right: 0;
+    padding: 5px;
+}
+.user-manager .thumb-wrap span{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+   width: 76px; /* // for ie to ensure that the text is centered*/
+}
+
+.user-manager .x-view-selected .thumb {
+    background:#8db2e3;
+}
+
+.user-manager .x-view-selected {
+	/***
+	border:2px solid #8db2e3;
+	
+  /****  background:#8db2e3;****/
+}
+/*******
+.userCenter .loading-indicator {
+    font-size:8pt;
+    background-image:url(../../resources/images/default/grid/loading.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left:20px;
+    margin:10px;
+}
+*******/
+
+	
+	
+

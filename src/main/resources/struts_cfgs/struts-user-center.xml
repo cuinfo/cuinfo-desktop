@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+        
+<!--=======================Struts2 基本信息配置(UserCenterAction)============================== -->
+<struts>
+    <package name="user-center" namespace="/userCenter" extends="base-action">
+        <default-action-ref name="index"/>
+        <default-class-ref class="UserCenterAction"/>
+        
+        <!--===用户中心首页===== -->
+        <action name="index">
+            <result>/WEB-INF/jsp/user-center/index.jsp</result>
+        </action>
+        
+         <!--===修改信息===== -->
+        <action name="modifyPassword" method="modifyPassword">
+            <result type="json">
+                <param name="root">processResult</param>
+            </result>
+        </action>
+    </package>
+    
+    
+   
+</struts>
