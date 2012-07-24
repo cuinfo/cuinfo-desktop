@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="org.cuinfo.desktopapp.fxmls.weblink.WebLinkController">
+  <children>
+    <WebView fx:id="webView" prefHeight="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <Polygon fx:id="polygon" fill="DODGERBLUE" layoutY="400.0" mouseTransparent="true" opacity="0.4" stroke="BLACK" strokeType="INSIDE">
+      <points>
+        <Double fx:value="50.0" />
+        <Double fx:value="0.0" />
+        <Double fx:value="10.0" />
+        <Double fx:value="50.0" />
+        <Double fx:value="790.0" />
+        <Double fx:value="50.0" />
+        <Double fx:value="750.0" />
+        <Double fx:value="0.0" />
+      </points>
+    </Polygon>
+    <ImageView fx:id="back" fitHeight="50.0" fitWidth="50.0" layoutX="287.0" layoutY="400.0" onMouseClicked="#back" onMouseEntered="#back" onMouseExited="#back" onMouseMoved="#back" onMousePressed="#back" onMouseReleased="#back" preserveRatio="true">
+      <image>
+        <Image url="@images/back.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="forward" fitHeight="50.0" fitWidth="50.0" layoutX="407.0" layoutY="400.0" onMouseClicked="#forward" onMouseEntered="#forward" onMouseExited="#forward" onMouseMoved="#forward" onMousePressed="#forward" onMouseReleased="#forward" preserveRatio="true">
+      <image>
+        <Image url="@images/forward.jpg" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="refresh" fitHeight="50.0" fitWidth="50.0" layoutX="350.0" layoutY="400.0" onMouseClicked="#refresh" onMouseEntered="#refresh" onMouseExited="#refresh" onMouseMoved="#refresh" onMousePressed="#refresh" preserveRatio="true">
+      <image>
+        <Image url="@images/refresh.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="close" fitHeight="50.0" fitWidth="50.0" layoutX="750.0" onMouseClicked="#close" onMouseEntered="#close" onMouseExited="#close" onMouseMoved="#close" onMousePressed="#close" onMouseReleased="#close" opacity="0.91" preserveRatio="true">
+      <image>
+        <Image url="@images/close.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+  </children>
+  <prefHeight>
+    <Long fx:value="675" />
+  </prefHeight>
+  <prefWidth>
+    <Long fx:value="1200" />
+  </prefWidth>
+  <stylesheets>
+    <URL value="@weblink.css" />
+  </stylesheets>
+</AnchorPane>

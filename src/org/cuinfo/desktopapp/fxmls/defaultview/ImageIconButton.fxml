@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<StackPane fx:id="me" minHeight="-Infinity" minWidth="-Infinity" prefHeight="128.0" prefWidth="128.0" xmlns:fx="http://javafx.com/fxml" fx:controller="org.cuinfo.desktopapp.fxmls.defaultview.ImageIconButtonController">
+  <children>
+    <Rectangle fx:id="background" fill="DODGERBLUE" height="128.0" onMouseClicked="#handle" onMouseEntered="#handle" onMouseExited="#handle" onMouseMoved="#handle" onMousePressed="#handle" onMouseReleased="#handle" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="128.0" />
+    <VBox id="VBox" alignment="CENTER" mouseTransparent="true" spacing="15.0">
+      <children>
+        <ImageView fx:id="iconImage" fitHeight="64.0" fitWidth="64.0" mouseTransparent="true" preserveRatio="true">
+          <image>
+            <Image url="@images/appCenter2_64.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <Label fx:id="text" mouseTransparent="true" text="应用程序信息" textFill="WHITE" />
+      </children>
+      <effect>
+        <DropShadow color="GREY" height="22.011904761904763" radius="12.276785714285715" spread="0.03968253968253968" width="29.095238095238095" />
+      </effect>
+    </VBox>
+  </children>
+</StackPane>
